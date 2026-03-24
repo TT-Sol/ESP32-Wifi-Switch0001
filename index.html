@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>ESP32 Relay Control Dashboard</title>
+  <title>Home Wifi Switch</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
@@ -198,17 +198,17 @@
 
   <script>
     // Firebase config
-    const firebaseConfig = {
-	  apiKey: "AIzaSyBFzQJ8a1AuHJABCDvg6UJMxjmD_XPPPOg",
-	  authDomain: "esp32-relay-control-01.firebaseapp.com",
-	  databaseURL: "https://esp32-relay1-control-02-default-rtdb.europe-west1.firebasedatabase.app",
-	  projectId: "esp32-relay-control-01",
-	  storageBucket: "esp32-relay-control-02.firebasestorage.app",
-	  messagingSenderId: "1057958003190",
-	  appId: "1:1057958003190:web:d4200d0e99b5ed880507d7"
-	};
+  const firebaseConfig = {
+  apiKey: "AIzaSyDor_t3YLi99sbqVxsKrvPm2UaSclnTPLE",
+  authDomain: "esp-wifiswitch-0001.firebaseapp.com",
+  databaseURL: "https://esp-wifiswitch-0001-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "esp-wifiswitch-0001",
+  storageBucket: "esp-wifiswitch-0001.firebasestorage.app",
+  messagingSenderId: "865106330128",
+  appId: "1:865106330128:web:758d3c8c8cd880e0550095"
+};
 
-    firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
     // Predefined login credentials (can be replaced with your logic)
     const allowedEmail = "abc@gmail.com";
